@@ -1,0 +1,12 @@
+:root{
+  --tech-base:#071029;
+  --tech-surface:#071428;
+  --tech-accent:#0ea5e9;
+  --tech-text:#e6eef6;
+}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--tech-base);color:var(--tech-text)}
+.wrap{max-width:1100px;margin:0 auto;padding:2rem}
+
+/* helpers */
+.bg-tech-surface{background:var(--tech-surface)}
+.text-tech-text{color:var(--tech-text)}

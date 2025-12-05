@@ -1,0 +1,70 @@
+<!-- PAGE 1: HOME -->
+<section class="min-h-[calc(100vh-4rem)] flex items-center">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+			<div>
+				<div class="inline-block px-3 py-1 mb-4 text-xs font-mono font-semibold tracking-wider text-tech-accent uppercase bg-blue-900/30 rounded-full border border-blue-800">
+					System Status: Online
+				</div>
+				<h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+					IT 11<br />
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Portfolio</span>
+				</h1>
+				<p class="text-lg text-gray-400 mb-8 max-w-lg">
+					A portfolio of IT 11 for S.Y. 2025-2026 First Sem under Instructor John David Vidad.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a
+						href="/summary"
+						class="px-8 py-3 bg-tech-accent hover:bg-blue-600 text-white font-semibold rounded-lg transition-all shadow-lg shadow-blue-500/30 text-center"
+					>
+						Check Course Summary
+					</a>
+					<a
+						href="/outputs"
+						class="px-8 py-3 border border-gray-600 hover:border-tech-accent hover:text-tech-accent rounded-lg transition-all text-center"
+					>
+						View Selected Outputs
+					</a>
+				</div>
+
+				<!-- Stats -->
+				<div class="grid grid-cols-3 gap-6 mt-12 border-t border-gray-800 pt-8">
+					<div>
+						<div class="text-2xl font-bold text-white">99.9% </div>
+						<div class="text-sm text-gray-500 font-mono">Passing Rate</div>
+					</div>
+					<div>
+						<div class="text-2xl font-bold text-white">100+</div>
+						<div class="text-sm text-gray-500 font-mono">Students</div>
+					</div>
+					<div>
+						<div class="text-2xl font-bold text-white">24/7</div>
+						<div class="text-sm text-gray-500 font-mono">Chat Support</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Decorative Graphic -->
+			<div class="relative hidden lg:block">
+				<div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full opacity-20 blur-3xl animate-pulse-slow"></div>
+				<div class="relative bg-tech-surface border border-gray-700 p-6 rounded-xl shadow-2xl">
+					<div class="flex items-center gap-2 mb-4 border-b border-gray-700 pb-4">
+						<div class="w-3 h-3 rounded-full bg-red-500"></div>
+						<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+						<div class="w-3 h-3 rounded-full bg-green-500"></div>
+						<span class="ml-2 font-mono text-xs text-gray-500">terminal@it11ws:~/root</span>
+					</div>
+					<div class="font-mono text-sm space-y-2">
+						<p class="text-green-400">$ initialize ws --secure</p>
+						<p class="text-gray-300">&gt; Establishing secure connection...</p>
+						<p class="text-gray-300">&gt; Checking for outputs...</p>
+						<p class="text-gray-300">&gt; Downloading data...</p>
+						<p class="text-blue-400">&gt; [SUCCESS] Summary and Output Ready.</p>
+						<div class="h-2 w-4 bg-gray-400 animate-pulse inline-block"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
