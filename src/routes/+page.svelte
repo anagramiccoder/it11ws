@@ -1,3 +1,7 @@
+<script>
+	import { resolve } from "$app/paths";
+
+</script>
 <!-- PAGE 1: HOME -->
 <section class="min-h-[calc(100vh-4rem)] flex items-center">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -15,13 +19,13 @@
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4">
 					<a
-						href="/summary"
+						href={resolve("/summary")}
 						class="px-8 py-3 bg-tech-accent hover:bg-blue-600 text-white font-semibold rounded-lg transition-all shadow-lg shadow-blue-500/30 text-center"
 					>
 						Check Course Summary
 					</a>
 					<a
-						href="/outputs"
+						href={resolve("/outputs")}
 						class="px-8 py-3 border border-gray-600 hover:border-tech-accent hover:text-tech-accent rounded-lg transition-all text-center"
 					>
 						View Selected Outputs

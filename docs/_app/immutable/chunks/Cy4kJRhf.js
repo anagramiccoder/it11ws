@@ -1,0 +1,1 @@
+import{w as n}from"./0LG3Yr90.js";function c(){const{subscribe:i,update:r}=n([]);return{subscribe:i,add:(e,s="success")=>{const t=Math.random().toString(36).substr(2,9);return r(o=>[...o,{id:t,message:e,type:s}]),setTimeout(()=>{r(o=>o.filter(a=>a.id!==t))},4e3),t},remove:e=>{r(s=>s.filter(t=>t.id!==e))}}}const d=c();export{d as t};

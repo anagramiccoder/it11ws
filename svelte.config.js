@@ -1,12 +1,24 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter()
+		// Build a fully static site suitable for GitHub Pages. The output directory is `docs` so
+		// you can publish the `docs/` folder from the repository Settings → Pages.
+		adapter: adapter({
+			// output folders for static build
+			pages: 'docs',
+			assets: 'docs',
+			// optional: provide a fallback page for SPA-style routing (unnecessary for pure static sites)
+			// fallback: '200.html'
+		}),
+
+		// Allow building with a repo subpath by setting the BASE_PATH environment variable.
+		// Example (Windows cmd):
+		//   set "BASE_PATH=/your-repo-name" && npm run build
+		paths: {
+			base: process.env.BASE_PATH || ''
+		}
 	}
 };
 

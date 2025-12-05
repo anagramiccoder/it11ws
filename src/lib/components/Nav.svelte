@@ -1,6 +1,6 @@
 <script>
 	let mobileOpen = false;
-
+	import { resolve } from '$app/paths';
 	function toggleMobileMenu() {
 		mobileOpen = !mobileOpen;
 	}
@@ -16,38 +16,38 @@
 		<div class="flex items-center justify-between h-16">
 			<!-- Logo -->
 			<div class="flex-shrink-0 cursor-pointer">
-				<a href="/" class="font-mono text-2xl font-bold text-tech-accent neon-text">&lt;IT 11/&gt;</a>
+				<a href={resolve("/")} class="font-mono text-2xl font-bold text-tech-accent neon-text">&lt;IT 11/&gt;</a>
 			</div>
 
 			<!-- Desktop Menu -->
 			<div class="hidden md:block">
 				<div class="ml-10 flex items-baseline space-x-8">
 					<a
-						href="/"
+						href={resolve("/")}
 						class="nav-link text-gray-300 hover:text-tech-glow px-3 py-2 rounded-md text-sm font-medium transition-colors"
 					>
 						Home
 					</a>
 					<a
-						href="/summary"
+						href={resolve("/summary")}
 						class="nav-link text-gray-300 hover:text-tech-glow px-3 py-2 rounded-md text-sm font-medium transition-colors"
 					>
 						Summary
 					</a>
 					<a
-						href="/outputs"
+						href={resolve("/outputs")}
 						class="nav-link text-gray-300 hover:text-tech-glow px-3 py-2 rounded-md text-sm font-medium transition-colors"
 					>
 						Outputs
 					</a>
 					<a
-						href="/about"
+						href={resolve("/about")}
 						class="nav-link text-gray-300 hover:text-tech-glow px-3 py-2 rounded-md text-sm font-medium transition-colors"
 					>
 						About
 					</a>
 					<a
-						href="/contact"
+						href={resolve("/contact")}
 						class="border border-tech-accent text-tech-accent hover:bg-tech-accent hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all"
 					>
 						Contact Us
@@ -76,35 +76,35 @@
 		<div class="md:hidden bg-tech-surface border-b border-gray-700">
 			<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
 				<a
-					href="/"
+					href={resolve("/")}
 					on:click={closeMobileMenu}
 					class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 				>
 					Home
 				</a>
 				<a
-					href="/summary"
+					href={resolve("/summary")}
 					on:click={closeMobileMenu}
 					class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 				>
 					Summary
 				</a>
 				<a
-					href="/outputs"
+					href={resolve("/outputs")}
 					on:click={closeMobileMenu}
 					class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 				>
 					Outputs
 				</a>
 				<a
-					href="/about"
+					href={resolve("/about")}
 					on:click={closeMobileMenu}
 					class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left"
 				>
 					About
 				</a>
 				<a
-					href="/contact"
+					href={resolve("/contact")}
 					on:click={closeMobileMenu}
 					class="text-tech-accent font-bold block px-3 py-2 rounded-md text-base w-full text-left"
 				>
